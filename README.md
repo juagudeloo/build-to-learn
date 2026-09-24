@@ -21,7 +21,7 @@ See [SKILL.md](SKILL.md) for the full methodology.
 Clone this repo into your Claude Code skills directory:
 
 ```bash
-git clone <repo-url> ~/.claude/skills/build-to-learn
+git clone git@github.com:juagudeloo/build-to-learn.git ~/.claude/skills/build-to-learn
 ```
 
 Claude Code picks up any skill under `~/.claude/skills/<name>/SKILL.md` automatically — no further
