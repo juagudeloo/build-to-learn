@@ -100,6 +100,30 @@ the plan actually needs, as it comes up, rather than one big upfront pass:
 - Flag every inference as an inference. Never present a guess as a verified fact — same rule
   `repo-deep-dive` applies to reading an unfamiliar repo.
 
+### Cite external sources, not just the primary reference
+
+The reader is building something informed by more than one piece of prior work — the primary
+reference implementation is one source, but a claim about *another* model, paper, or established
+technique (e.g. "this pattern is also used by X", "the field usually does Y") is a separate claim
+that needs its own grounding, not a ride on the primary reference's already-verified credibility.
+
+Whenever a claim reaches outside the primary reference — a comparison to another model, a "this is
+standard practice" statement, a fact about a paper not yet opened — verify it rather than asserting
+it from training knowledge alone, since that knowledge can be stale or simply wrong on specifics
+(exact training stages, which components are frozen, exact numbers). A web search is cheap; a
+confidently wrong claim about someone else's published work is not. Cite what was actually found,
+with a real link, in the reply itself — not just once, as a matter of course whenever an external
+source enters the conversation, in chat and in the study plan alike. This is not optional polish:
+for a reader doing scientific or research work, being able to trace a claim back to its actual
+source is often as important as the claim being correct, since they may need to cite it themselves,
+challenge it, or check it hasn't been superseded.
+
+This applies immediately, in the live conversation, not only once something gets written into
+`study_plan.md` — an unsourced claim about another model made in passing while answering a question
+is exactly the kind of thing that erodes trust if it later turns out to be misremembered. When a
+"Design rationale" block (see below) cites literature or established practice, the same rule
+applies there too: a real link, not a vague "the literature suggests."
+
 ---
 
 ## Build the study plan document
